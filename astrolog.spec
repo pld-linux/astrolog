@@ -12,8 +12,6 @@ URL:		http://www.astrolog.org/
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define 	_prefix	/usr/X11R6
-
 %description
 Astrolog is a freeware astrology program.
 
@@ -26,12 +24,14 @@ Astrolog jest darmowym programem do astrologii.
 %patch0 -p1
 
 %build
-%{__make}
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-# create directories if necessary
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install astrolog $RPM_BUILD_ROOT%{_bindir}
 
 %clean
