@@ -1,0 +1,12 @@
+diff -Naur astrolog-5.40/Makefile astrolog-5.40-p/Makefile
+--- astrolog-5.40/Makefile	Wed Dec 23 23:29:00 1998
++++ astrolog-5.40-p/Makefile	Tue Sep  2 15:22:12 2003
+@@ -23,7 +23,7 @@
+  charts0.o charts1.o charts2.o charts3.o intrpret.o\
+  xdata.o xgeneral.o xdevice.o xcharts0.o xcharts1.o xcharts2.o xscreen.o
+ # If you don't have X windows, delete the "-lX11" part from the line below:
+-LIBS = -lm -lX11
++LIBS = -lm -lX11 -L/usr/X11R6/lib
+ CFLAGS = -O
+ 
+ astrolog:: $(OBJ)
