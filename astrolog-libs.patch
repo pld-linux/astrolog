@@ -6,7 +6,7 @@ diff -Naur astrolog-5.40/Makefile astrolog-5.40-p/Makefile
   xdata.o xgeneral.o xdevice.o xcharts0.o xcharts1.o xcharts2.o xscreen.o
  # If you don't have X windows, delete the "-lX11" part from the line below:
 -LIBS = -lm -lX11
-+LIBS = -lm -lX11 -L/usr/X11R6/lib
++LIBS = -lm -lX11 -L/usr/X11R6/lib -L/usr/X11R6/lib64
  CFLAGS = -O
  
  astrolog:: $(OBJ)
