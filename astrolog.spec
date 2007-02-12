@@ -1,5 +1,5 @@
 Summary:	Astrology program
-Summary(pl):	Program do astrologii
+Summary(pl.UTF-8):   Program do astrologii
 Name:		astrolog
 Version:	5.40
 Release:	1
@@ -15,7 +15,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Astrolog is a freeware astrology program.
 
-%description -l pl
+%description -l pl.UTF-8
 Astrolog jest darmowym programem do astrologii.
 
 %prep
