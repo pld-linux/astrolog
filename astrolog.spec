@@ -1,5 +1,5 @@
 Summary:	Astrology program
-Summary(pl.UTF-8):   Program do astrologii
+Summary(pl.UTF-8):	Program do astrologii
 Name:		astrolog
 Version:	5.40
 Release:	1
