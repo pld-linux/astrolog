@@ -9,7 +9,7 @@ Source0:	http://www.astrolog.org/ftp/ast54unx.shr
 # Source0-md5:	3d604e013d8a7e2134bc637f17bb2857
 Patch0:		%{name}-libs.patch
 URL:		http://www.astrolog.org/
-BuildRequires:	XFree86-devel
+BuildRequires:	xorg-lib-libX11-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
